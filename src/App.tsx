@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import Main from '../src/layout/Main/Main';
 
 function App() {
@@ -9,4 +9,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
