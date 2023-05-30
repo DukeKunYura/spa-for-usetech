@@ -2,6 +2,7 @@ import { FC } from "react";
 
 const Person: FC = () => {
     const persons: Array<string> = ["Ivan", "Fedot", "Gustav"];
+    console.log(import.meta.env.VITE_TOKEN)
 
     interface PersonOne {
         name: string,
