@@ -26,6 +26,14 @@ const Person: FC = () => {
         return croped.slice(0, lastSpaceIndex).trim() + '...';
     }
 
+    const formatDate = (dateString: string): string => {
+        const date = new Date(dateString);
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return String(`${day}. ${month}. ${year}`);
+    }
+
     const setName = (name: string) => {
 
         const newPerson: PersonOne = {
@@ -50,6 +58,7 @@ const Person: FC = () => {
         <div>Person Page
             {personsList.length > 0 && personsList.map(item => <div key={item.name}>{item.name}</div>)}
             {cropText(text)}
+            {formatDate("2022-11-02 21:52:24+03:00")}
         </div>
     )
 }
