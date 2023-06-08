@@ -12,6 +12,9 @@ const Header: FC = () => {
                     <Link to="/person">Person</Link>
                 </li>
                 <li>
+                    <Link to="/test">Test</Link>
+                </li>
+                <li>
                     <Link to="/nothing-here">Nothing Here</Link>
                 </li>
             </ul>
