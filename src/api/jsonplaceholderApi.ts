@@ -7,10 +7,18 @@ export const jsonplaceholderApi = createApi({
     endpoints: (builder) => ({
         getPosts: builder.query<number, void>({
             query: () => `posts`,
-            transformResponse: (response: IPostResponses) => response[5].id
+            transformResponse: (response: IPostResponses) => {
+                if (response[5].id !== null) {
+                    return response[5]?.id
+                } else {
+                    return 44
+                }
+            }
         }),
-        getPostById: builder.query<IPostResponse, number>({
-            query: (id) => `posts/${id}`,
+        getPostById: builder.query<string, number>({
+            queryFn: () => {
+                return { data: "88" };
+            },
         })
     }),
 })
