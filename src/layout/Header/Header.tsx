@@ -15,6 +15,9 @@ const Header: FC = () => {
                     <Link to="/test">Test</Link>
                 </li>
                 <li>
+                    <Link to="/login">Login</Link>
+                </li>
+                <li>
                     <Link to="/nothing-here">Nothing Here</Link>
                 </li>
             </ul>
