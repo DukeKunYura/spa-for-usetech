@@ -12,7 +12,7 @@ const TestSkip: FC = () => {
     return (
         <>
             <div>TestSkip</div>
-            {posts && posts}
+            {posts && <div>посты</div>}
             {post && post}
         </>
 
