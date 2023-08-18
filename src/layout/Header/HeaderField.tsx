@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
-const Header: FC = () => {
+const HeaderField: FC = () => {
     return (
         <nav>
             <ul>
@@ -26,4 +26,4 @@ const Header: FC = () => {
     )
 }
 
-export default Header;
+export default HeaderField;

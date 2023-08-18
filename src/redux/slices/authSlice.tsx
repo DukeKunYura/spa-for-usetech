@@ -20,6 +20,7 @@ export const authSlice = createSlice({
             state.userName = action.payload
         },
         setAuth: (state, action) => {
+            console.log(action.payload);
             state.auth = action.payload
         }
     }

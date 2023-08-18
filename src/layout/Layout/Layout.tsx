@@ -1,16 +1,22 @@
 import { FC } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import HeaderField from "../Header/HeaderField";
+import FooterField from "../Footer/FooterField";
 
-const Layout: FC = () => {
+
+const LayoutField: FC = () => {
+
     return (
         <>
-            <Header />
+            <HeaderField />
             <Outlet />
-            <Footer />
+            <FooterField />
+
         </>
+
+
 
     )
 }
-export default Layout;
+export default LayoutField;
+

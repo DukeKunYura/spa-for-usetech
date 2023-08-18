@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-const Footer: FC = () => {
+const FooterField: FC = () => {
     return (
         <>Footer</>
 
     )
 }
 
-export default Footer;
+export default FooterField;
